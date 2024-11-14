@@ -1,16 +1,11 @@
-# This is a sample Python script.
+import tkinter as tk    # импортируем модуль tkinter, чтобы создать окно и кнопки
+from interface import DictionaryApp    # импортируем класс DictionaryApp, который будет содержать всю информацию о приложении
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():    # функция main() создает окно и класс DictionaryApp
+    root = tk.Tk()    # создаем окно
+    app = DictionaryApp(root)    # создаем класс DictionaryApp и передаем ему окно
+    root.mainloop()    # запускаем главный цикл приложения
 
+if __name__ == "__main__":    # если этот файл выполняется как скрипт, то запускаем функцию main()
+    main()    # запускаем функцию main()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
